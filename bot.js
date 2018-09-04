@@ -10,7 +10,7 @@ client.on('ready', () => {
   });
 
 client.on('message', async message =>{
-  var prefix = "ا";
+  var prefix = "!";
 if (message.author.omar) return;
 if (!message.content.startsWith(prefix)) return;
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
@@ -60,7 +60,7 @@ var args = message.content.split(" ").slice(1);
 
 });
 client.on('message', async message =>{
-  var prefix = "ت";
+  var prefix = "!";
 if (message.author.omar) return;
 if (!message.content.startsWith(prefix)) return;
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
